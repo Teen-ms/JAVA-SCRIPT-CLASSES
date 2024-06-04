@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            height:200px;
+            width: 800px;
+            background-color:rgb(201, 23, 53);
+        }
+    </style>
+</head>
+<center><h2 id="get" style="color:white"></h2></center>
+<body>
+    <script>
+        let n1=Number(prompt("enter your number"));
+        let n2=Number(prompt("enter your number"));
+        let n3=Number(prompt("enter your number"));
+       
+        if(n1>n2 && n1>n3)
+        {
+            let res=document.getElementById("get")
+            res.innerHTML=`<h2>Greater Number: ${n1} </h2>` 
+        }
+        else if(n2>n1 && n2>n3){
+            let res=document.getElementById("get")
+            res.innerHTML=`<h2>Greater Number:  ${n2} </h2>` 
+        }
+        else{
+            let res=document.getElementById("get")
+            res.innerHTML=`<h2>Greater Number: ${n3} </h2>` 
+        }
+    </script>
+</body>
+</html>
