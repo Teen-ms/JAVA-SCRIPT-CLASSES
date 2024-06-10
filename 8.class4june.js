@@ -1,10 +1,11 @@
-// nested condition = chaining
-
+// nested condition is  if statement used with in if statement 
+// -------------------------Program-----------------------------
 // Program fot B.tech admission 
 // let name= shivani 
 // let 12 pass
 // pcm
 // enterance exam 
+
 
 let stu_name="shivani"
 if(stu_name){
@@ -18,6 +19,14 @@ if(stu_name){
        if(stream=="PCM")
         {
             console.log(stu_name,"Student has PCM")
+
+            let counsling="pass"
+            if(counsling=="fail"){
+                console.log(stu_name,"Enterence exam pass")
+            }
+            else{
+                console.log(stu_name,"Enterence exam is not pass")
+            }
         }
         else{
             console.log(stu_name,"student has not pcm")
