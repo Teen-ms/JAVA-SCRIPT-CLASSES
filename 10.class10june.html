@@ -32,16 +32,38 @@
     // shivani();
 
     // print table by taking input from user.
-    let tbl=document.getElementById("tbl")
+    let tbl=document.getElementById('tbl')
     function table(){
-      let user_name=Number(prompt("Enter your Number for table : "))
+      let user_num=Number(prompt("Enter your Number for table : "))
         if(user_num>0)
         {
-            for (let i=0; i<11; i++)
-            data=`${user_num} X ${i}=${user_num*i}<br>`
-            tbl.innerHTML +=data;
+            for (let i=1; i<11; i++){
+            data=`${user_num} X ${i} = ${user_num*i}<br>`
+            tbl.innerHTML += data;
         }
     }
+}
+     table()
+
+      // printing string using for loop
+      for(i=1; i<=10; i++)
+        {
+            document.write(`shivani panchal => ${i}<br>`)
+        }
+
+        let data="Dreamer Infotech"
+        size=data.length
+        // document.write(`${data} size = ${size}<br>`)
+        for(i=0; size>i; i++){
+        // document.write(`${data[i]}<br>`)
+        // if(i%2==0)
+        // {
+        //     document.write(`${data[i]} = ${i}<br>`)
+        // }
+        }
+        // size=data[14]
+        // document.write(`${size}`)
+
 </script>
 </body>
 </html>

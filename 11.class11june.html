@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- <p class="text-blue-600/50">The quick brown fox...</p>
+  <h1 class="text-3xl font-bold underline text-red-950/60">
+    Hello world!
+     
+  </h1>
+  <h2 class="text-base font-semibold leading-7 text-pink-500">Profile</h2>
+ 
+
+    for(i=0; i<=10;i++){
+        document.write(`hello world${i}<br>`)
+    } -->
+
+
+<div class="m-8">
+  <p id="fn">Full Name:</p>
+  <p id="ln">Last Name:</p>
+  <p id="em">Email:</p>
+  <p id="co">Country Name:</p>
+  <p id="st">Street address:</p>
+  <p id="ci">City Name:</p>
+  <p id="sa">State Name:</p>
+  <p id="p">postal Name:</p>
+</div>
+
+ 
+
+    <div class="border-b border-gray-900/10 pb-12 m-8">
+      <h2 class="text-base font-semibold leading-7 text-gray-900">Personal Information</h2>
+      <p class="mt-1 text-sm leading-6 text-gray-600">Use a permanent address where you can receive mail.</p>
+
+      <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+        <div class="sm:col-span-3">
+          <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
+          <div class="mt-2">
+            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+
+        <div class="sm:col-span-3">
+          <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
+          <div class="mt-2">
+            <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+
+        <div class="sm:col-span-4">
+          <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+          <div class="mt-2">
+            <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+
+        <div class="sm:col-span-3">
+          <label for="country" class="block text-sm font-medium leading-6 text-gray-900">Country</label>
+          <div class="mt-2">
+            <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
+              <option>United States</option>
+              <option>Canada</option>
+              <option>Mexico</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-span-full">
+          <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Street address</label>
+          <div class="mt-2">
+            <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+
+        <div class="sm:col-span-2 sm:col-start-1">
+          <label for="city" class="block text-sm font-medium leading-6 text-gray-900">City</label>
+          <div class="mt-2">
+            <input type="text" name="city" id="city" autocomplete="address-level2" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+
+        <div class="sm:col-span-2">
+          <label for="region" class="block text-sm font-medium leading-6 text-gray-900">State / Province</label>
+          <div class="mt-2">
+            <input type="text" name="region" id="region" autocomplete="address-level1" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+
+        <div class="sm:col-span-2">
+          <label for="postal-code" class="block text-sm font-medium leading-6 text-gray-900">ZIP / Postal code</label>
+          <div class="mt-2">
+            <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+        <button type="submit" class="text-white bg-blue-700" onclick="submit()">Submit</button>
+      </div>
+    </div>
+ 
+    
+
+
+<script>
+  let fn=document.getElementById('fn')
+  let ln=document.getElementById('ln')
+  let em=document.getElementById('em')
+  let co=document.getElementById('co')
+  let st=document.getElementById('st')
+  let ci=document.getElementById('ci')
+  let sa=document.getElementById('sa')
+  let p=document.getElementById('p')
+
+
+  function submit() 
+  {
+    alert("ok")
+    let first_name_i=document.getElementById(`first-name`).value
+    let last_name_i=document.getElementById(`last-name`).value
+    let email_i=document.getElementById(`email`).value
+    let country_i=document.getElementById(`country`).value
+    let street_i=document.getElementById(`street-address`).value
+    let city_i=document.getElementById(`city`).value
+    let State_i=document.getElementById(`region`).value
+    let postal_i=document.getElementById(`postal-code`).value
+
+
+  fn.innerHTML=`${first_name_i}`;
+  ln.innerHTML=`${last_name_i}`;
+  em.innerHTML=`${email_i}`;
+  co.innerHTML=`${country_i};`
+  st.innerHTML=`${street_i}`;
+  ci.innerHTML=`${city_i}`;
+  Sa.innerHTML=`${State_i}`;
+  p.innerHTML=`${postal_i}`;
+  }
+
+
+
+
+</script>
+</body>
+</html>

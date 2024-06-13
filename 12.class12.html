@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height:600px;
+            width:400px;
+            background-color:black;
+        }
+        .top{
+            height:200px;
+            background-color:pink;
+        }
+        .bottom{
+            display:flex;
+            flex-wrap:wrap;
+        
+            height:400px;
+            background-color:yellow;
+        }
+        button{
+      
+            height:40px;
+            width:150px;
+            margin-left:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+       <div id="box1" class="top"></div>
+       <div class="bottom">
+        <button id="box" onclick="skyblue()">skyblue</button>
+        <button id="box2" onclick="red()">Red</button>
+        <button id="box3" onclick="green()">Green</button>
+        <button id="box4" onclick="blue()">Blue</button>
+        <button id="box5" onclick="teal()">Teal</button>
+        <button id="box6" onclick="Purple()">Purple</button>
+        <button id="box7" onclick="orange()">Orange</button>
+        <button id="box8" onclick="black()">black</button>
+        <button id="box9" onclick="gray()">gray</button>
+        <button id="box10" onclick="brown()">brown</button>
+       </div>
+       <div class="clear">click</div>
+    </div>
+    <script>
+       function skyblue()
+       {
+        document.getElementById("box1").style.backgroundColor="skyblue"
+        
+       }
+
+       function red()
+       {
+        document.getElementById("box1").style.backgroundColor="red"
+       }
+       function green()
+       {
+        document.getElementById("box1").style.backgroundColor="green"
+       }
+       function blue()
+       {
+        document.getElementById("box1").style.backgroundColor="blue"
+       }
+       function teal()
+       {
+        document.getElementById("box1").style.backgroundColor="teal"
+       }
+       
+       function Purple()
+       {
+        document.getElementById("box1").style.backgroundColor="purple"
+       }
+
+       function orange()
+       {
+        document.getElementById("box1").style.backgroundColor="orange"
+       }
+
+       function black()
+       {
+        document.getElementById("box1").style.backgroundColor="black"
+       }
+
+       function gray()
+       {
+        document.getElementById("box1").style.backgroundColor="gray"
+       }
+
+       function brown()
+       {
+        document.getElementById("box1").style.backgroundColor="brown"
+       }
+     </script>
+</body>
+</html>
